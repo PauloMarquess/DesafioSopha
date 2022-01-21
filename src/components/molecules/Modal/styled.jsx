@@ -28,23 +28,19 @@ export const CardButton = styled.div`
   justify-content: space-evenly;
   transition: 0ms.5s;
   margin: 10px 0;
-  Button {
-    :hover {
-      background-color: ${COLORS.thirdBlue};
-    }
-  }
 `
 export const BtnClose = styled.div`
   position: relative;
   width: 100%;
-  left: 97%;
-  bottom: 25px;
-
+  left: 92%;
+  top: 15px;
   Button {
     width: 30px;
     height: 30px;
-    border-radius: 50%;
     padding-right: 3px;
     transition: 0.5s;
+    background: transparent;
+    color: #000;
+    font-size: 20px;
   }
 `

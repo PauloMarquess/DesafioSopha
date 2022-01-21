@@ -20,9 +20,9 @@ export const Form = styled.form`
   img {
     width: 22px;
     position: relative;
-    right: 30%;
+    left: 5%;
+    bottom: 45px;
   }
-
   select {
     width: 60%;
     height: 40px;
@@ -52,6 +52,7 @@ export const Form = styled.form`
       ::placeholder {
         font-size: 20px;
         color: #ababab;
+        padding-left: 30px;
       }
     }
   }
@@ -86,5 +87,10 @@ export const MiniContainer = styled.div`
   font-weight: 600;
   p {
     margin-right: 20px;
+  }
+  img {
+    position: absolute;
+    left: 51%;
+    bottom: 55.5%;
   }
 `

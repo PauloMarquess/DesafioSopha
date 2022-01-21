@@ -9,7 +9,7 @@ export const Container = styled.button`
   padding: 5px 0;
   border: 1px solid ${COLORS.graycolor};
   display: ${(props) => (props.isActive ? `block` : `none`)};
-  background: #039be5;
+  background: #a6c0dd;
   :hover {
     cursor: pointer;
   }

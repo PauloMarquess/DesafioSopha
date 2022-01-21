@@ -3,6 +3,7 @@ import { Form, Container, Checkout, CardButton, MiniContainer } from './styled'
 import { BtnClose } from '../Modal/styled'
 import Button from '../../atomic/Button'
 import IconCalendar from '../../../assets/img/calendar.svg'
+import Lupa from '../../../assets/img/lupa.svg'
 
 const Scheduling = ({ setVisible }) => {
   const handleClose = () => {
@@ -19,6 +20,8 @@ const Scheduling = ({ setVisible }) => {
           placeholder="Buscar por Nome, CPF, CNPJ ou Celular"
           autofocus
         />
+        <img src={Lupa} />
+
         <select>
           <option value="1" disabled selected>
             Linha do tempo/ Contrato
@@ -35,13 +38,13 @@ const Scheduling = ({ setVisible }) => {
           </option>
         </select>
         <MiniContainer>
+          <img src={IconCalendar} />
           <select>
             <option type="date" value="4" disabled selected>
               Data
             </option>
           </select>
           <p> + opções</p>
-          <img src={IconCalendar} />
         </MiniContainer>
         <MiniContainer>
           <select>
