@@ -12,6 +12,8 @@ export const Container = styled.div`
     border: none;
     border-radius: 6px;
     color: ${COLORS.White};
+    font-weight: 600;
+
     :hover {
       cursor: pointer;
       background-color: ${COLORS.secondBlue};

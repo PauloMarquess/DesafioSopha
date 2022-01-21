@@ -9,10 +9,10 @@ export const Container = styled.div`
 export const List = styled.td`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-self: flex-start;
   padding: 10px;
   border: 1px solid ${COLORS.graycolor};
-  width: 12%;
+  width: 100%;
   height: 100px;
 `
 export const Table = styled.div`

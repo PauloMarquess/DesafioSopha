@@ -8,13 +8,29 @@ function Collaborator() {
     return (
       <Table>
         <List> {collaborator.name}</List>
-        <TesteCalendar turno="Manhã" activity="nome,contrato" isActive />
+        <TesteCalendar
+          turno="Manhã"
+          activity="-nome, contrato,endereço"
+          isActive
+        />
         <TesteCalendar />
-        <TesteCalendar turno="Manhã" activity="nome,contrato" isActive />
-        <TesteCalendar turno="12:00" activity="nome,contrato" isActive />
+        <TesteCalendar
+          turno="12:00"
+          activity="-nome, contrato,endereço"
+          isActive
+        />
+        <TesteCalendar
+          turno="Manhã"
+          activity="-nome, contrato,endereço"
+          isActive
+        />
         <TesteCalendar />
         <TesteCalendar />
-        <TesteCalendar turno="12:00" activity="nome,contrato" isActive />
+        <TesteCalendar
+          turno="12:00"
+          activity="-nome, contrato,endereço"
+          isActive
+        />
       </Table>
     )
   })

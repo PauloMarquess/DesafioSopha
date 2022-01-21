@@ -9,14 +9,18 @@ export const Container = styled.button`
   padding: 5px 0;
   border: 1px solid ${COLORS.graycolor};
   display: ${(props) => (props.isActive ? `block` : `none`)};
+  background: #039be5;
   :hover {
     cursor: pointer;
   }
   span {
-    color: ${COLORS.graycolor};
-  }
-  p {
     font-size: 11.5px;
     color: ${COLORS.White};
   }
+`
+export const Activity = styled.div`
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-self: top;
 `

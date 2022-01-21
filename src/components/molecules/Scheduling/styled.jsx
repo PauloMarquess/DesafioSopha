@@ -17,6 +17,11 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;
+  img {
+    width: 22px;
+    position: relative;
+    right: 30%;
+  }
 
   select {
     width: 60%;
@@ -32,7 +37,8 @@ export const Form = styled.form`
     background-position-x: 100%;
     background-position-y: 5px;
   }
-  input {
+  input,
+  textarea {
     width: 90%;
     height: 15px;
     margin: 10px;
@@ -43,7 +49,16 @@ export const Form = styled.form`
       border: none;
       border-bottom: 1px solid ${COLORS.graycolor};
       border-radius: 0;
+      ::placeholder {
+        font-size: 20px;
+        color: #ababab;
+      }
     }
+  }
+  textarea {
+    height: 30px;
+    overflow-y: hidden;
+    resize: none;
   }
 `
 
@@ -61,5 +76,15 @@ export const CardButton = styled.div`
 
   Button {
     background-color: ${COLORS.grayDark};
+    padding-right: 20%;
+  }
+`
+export const MiniContainer = styled.div`
+  display: flex;
+  align-items: center;
+  color: ${COLORS.secondGray};
+  font-weight: 600;
+  p {
+    margin-right: 20px;
   }
 `

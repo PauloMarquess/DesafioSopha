@@ -1,7 +1,8 @@
 import React from 'react'
-import { Form, Container, Checkout, CardButton } from './styled'
+import { Form, Container, Checkout, CardButton, MiniContainer } from './styled'
 import { BtnClose } from '../Modal/styled'
 import Button from '../../atomic/Button'
+import IconCalendar from '../../../assets/img/calendar.svg'
 
 const Scheduling = ({ setVisible }) => {
   const handleClose = () => {
@@ -29,21 +30,36 @@ const Scheduling = ({ setVisible }) => {
           </option>
         </select>
         <select>
-          <option value="1" disabled selected>
-            Data
+          <option value="3" disabled selected>
+            Tipo de agendamento
           </option>
         </select>
+        <MiniContainer>
+          <select>
+            <option type="date" value="4" disabled selected>
+              Data
+            </option>
+          </select>
+          <p> + opções</p>
+          <img src={IconCalendar} />
+        </MiniContainer>
+        <MiniContainer>
+          <select>
+            <option value="5" disabled selected>
+              Período
+            </option>
+          </select>
+          <p>Horário</p>
+        </MiniContainer>
         <select>
-          <option value="1" disabled selected>
-            Período
-          </option>
-        </select>
-        <select>
-          <option value="1" disabled selected>
+          <option value="6" disabled selected>
             Números de dias para reservar
           </option>
         </select>
-        <input type="text" placeholder="Observações interna" rows="5" />
+        <textarea
+          type="text"
+          placeholder="Observações interna &#10;(Informação interna,não enviaremos para o Cliente)"
+        ></textarea>
         <input type="text" placeholder="Colaboradores (marcar com @)" />
 
         <Checkout>
@@ -55,8 +71,17 @@ const Scheduling = ({ setVisible }) => {
           <label for="cliente">Enviar agendamento para o cliente</label>
         </Checkout>
         <CardButton>
-          <Button name="Cancelar" />
-          <Button name="Enviar" />
+          <Button
+            name="Cancelar"
+            background="#fff"
+            color="#000"
+            border="#ababab 3px solid"
+          />
+          <Button
+            name="Enviar"
+            background="#167ae4"
+            border="#ababab 3px solid"
+          />
         </CardButton>
       </Form>
     </Container>
