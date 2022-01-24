@@ -10,7 +10,7 @@ export const Container = styled.div`
 `
 export const Card = styled.li`
   width: 100%;
-  border-right: 1px solid ${COLORS.graycolor};
+  border-right: 0.5px solid ${COLORS.graycolor};
   height: 30px;
   text-align: center;
   display: flex;
@@ -24,7 +24,6 @@ export const List = styled.div`
 `
 export const Main = styled.div`
   display: flex;
-  align-items: center;
 
   h4 {
     display: flex;
@@ -32,10 +31,12 @@ export const Main = styled.div`
     justify-content: center;
     align-self: end;
     border: solid 1px ${COLORS.graycolor};
-    height: 60px;
+    height: 40px;
     text-align: center;
     margin-left: 10px;
-    width: 14%;
+    min-width: 180px;
+    padding: 10px;
+    background: #9b97971a;
   }
 `
 
@@ -48,6 +49,6 @@ export const Current = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 15px;
+  font-size: 13px;
   color: ${COLORS.White};
 `

@@ -4,7 +4,6 @@ import { COLORS } from '../../../constants/COLORS'
 export const Container = styled.div`
   width: 480px;
   position: fixed;
-  top: 5%;
   left: 35%;
   background-color: ${COLORS.White};
   display: flex;
@@ -21,12 +20,12 @@ export const Form = styled.form`
     width: 22px;
     position: relative;
     left: 5%;
-    bottom: 45px;
+    bottom: 40px;
   }
   select {
     width: 60%;
     height: 40px;
-    margin: 10px;
+    margin: 5px 10px;
     border: solid 1px ${COLORS.graycolor};
     border-radius: 6px;
     padding: 10px;
@@ -41,10 +40,11 @@ export const Form = styled.form`
   textarea {
     width: 90%;
     height: 15px;
-    margin: 10px;
+    margin: 5px 10px;
     border: solid 1px ${COLORS.graycolor};
     border-radius: 6px;
     padding: 10px;
+
     :first-child {
       border: none;
       border-bottom: 1px solid ${COLORS.graycolor};
@@ -91,6 +91,6 @@ export const MiniContainer = styled.div`
   img {
     position: absolute;
     left: 51%;
-    bottom: 55.5%;
+    bottom: 55%;
   }
 `

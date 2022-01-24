@@ -12,8 +12,10 @@ const TesteCalendar = ({ turno, activity, isActive }) => {
     <List>
       <Container onClick={Over} isActive={isActive}>
         <Activity>
-          <span>{turno}</span>
-          <p>{activity}</p>
+          <p>
+            <span>{turno}</span>
+            {activity}
+          </p>
         </Activity>
       </Container>
       {visible && <Modal setVisible={setVisible} />}

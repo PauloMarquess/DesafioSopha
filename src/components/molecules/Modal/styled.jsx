@@ -33,7 +33,7 @@ export const BtnClose = styled.div`
   position: relative;
   width: 100%;
   left: 92%;
-  top: 15px;
+  top: 5px;
   Button {
     width: 30px;
     height: 30px;

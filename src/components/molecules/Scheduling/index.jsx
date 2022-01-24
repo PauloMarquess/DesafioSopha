@@ -78,12 +78,12 @@ const Scheduling = ({ setVisible }) => {
             name="Cancelar"
             background="#fff"
             color="#000"
-            border="#ababab 3px solid"
+            border="#ababab 2.5px solid"
           />
           <Button
             name="Enviar"
             background="#167ae4"
-            border="#ababab 3px solid"
+            border="#ababab 2.5px solid"
           />
         </CardButton>
       </Form>

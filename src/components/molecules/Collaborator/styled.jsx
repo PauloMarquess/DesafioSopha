@@ -17,4 +17,15 @@ export const List = styled.td`
 `
 export const Table = styled.div`
   display: flex;
+  width: 100%;
+`
+export const StyleCollaborator = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 10px;
+  border: solid 1px ${COLORS.graycolor};
+  height: 100px;
+  min-width: 180px;
+  background: #9b97971a;
 `

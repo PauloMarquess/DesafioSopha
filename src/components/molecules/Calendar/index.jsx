@@ -1,9 +1,18 @@
 import { Card, Container, List, Main, Current } from './styled'
-import { numbersWeek, weekDays, dayOne } from '../../../constants/DATESCALENDAR'
+import {
+  numbersWeek,
+  weekDays,
+  dayOne,
+  dayOfTheWeek,
+} from '../../../constants/DATESCALENDAR'
 
 function Calendar() {
   const nameWeek = weekDays.map((dia) => {
-    return <Card>{dia}</Card>
+    return (
+      <>
+        {dayOfTheWeek === dia ? <Current>{dia}</Current> : <Card>{dia}</Card>}
+      </>
+    )
   })
   const numberWeeks = numbersWeek.map((data) => {
     return (

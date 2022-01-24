@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { COLORS } from '../../../constants/COLORS'
 
 export const Container = styled.button`
-  width: 100%;
   background-color: ${COLORS.bluecolor};
   border-radius: 6px;
   text-align: center;
@@ -16,11 +15,14 @@ export const Container = styled.button`
   span {
     font-size: 11.5px;
     color: ${COLORS.White};
+    margin-right: 5px;
+  }
+  p {
+    text-align: start;
   }
 `
 export const Activity = styled.div`
-  display: flex;
   text-align: center;
-  justify-content: space-evenly;
   align-self: top;
+  padding-left: 5px;
 `

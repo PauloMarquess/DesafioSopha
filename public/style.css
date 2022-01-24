@@ -3,5 +3,10 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+input,
+textarea,
+select {
+  outline-color: #000;
 }

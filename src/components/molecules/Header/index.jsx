@@ -28,10 +28,10 @@ const Header = () => {
           </option>
         </select>
         <h2>
-          Dia Atual{' '}
+          Esta semana{' '}
           <span>
             {' '}
-            &lt; &gt;
+            &lt; &gt;&nbsp;&nbsp;
             {datesCalendar()}
           </span>{' '}
         </h2>
